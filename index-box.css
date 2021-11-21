@@ -1,0 +1,40 @@
+
+.div-kotak1{
+    margin-right: 3em;
+    border-style: solid; color: black;
+    background-color:coral;
+    float: right;
+    width: 20%;
+    height: 600px;
+    margin-top: 1em;
+}
+
+.div-kotak2{
+    border-style: solid; color: black;
+    margin-right: 3em;
+    background-color: rgb(166, 255, 0);
+    float: right;
+    width: 20%;
+    height: 600px;
+    margin-top: 1em;
+}
+
+.div-kotak3{
+    border-style: solid; color: #000;
+    margin-right: 3em;
+    background-color: salmon;
+    float: right;
+    width: 20%;
+    height: 600px;
+    margin-top: 1em;
+}
+
+.div-kotak4{
+    border-style: solid; color: #000;
+    margin-right: 3em;
+    background-color: rebeccapurple;
+    float: right;
+    width: 20%;
+    height: 600px;
+    margin-top: 1em;
+}
