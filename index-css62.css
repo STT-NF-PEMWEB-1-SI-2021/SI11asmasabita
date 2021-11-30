@@ -1,0 +1,37 @@
+#nav{
+    background-color: palevioletred;
+    width: 150px;
+    height: 640px;
+}
+
+body{
+    display: flex;
+}
+
+header{
+    background-color: khaki;
+    width: 1099px;
+    height: 70px;
+}
+
+.div-article{
+    display: flex;
+}
+
+article{
+    background-color: lavenderblush;
+    width: 800px;
+    height: 500px;
+}
+
+aside{
+    background-color: aqua;
+    width: 300px;
+    height: 500px;
+}
+
+footer{
+    background-color: khaki;
+    width: 1099px;
+    height: 70px;
+}

@@ -1,0 +1,87 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foto-1 {
+    border: 4px solid; color: #000;
+    background-color: darkkhaki;
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    align-content: center;
+}
+
+.foto-2 {
+    border: 4px solid; color: #000;
+    background-color: darkkhaki;
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    align-content: center;
+}
+
+.foto-3 {
+    border: 4px solid; color: #000;
+    background-color: darkkhaki;
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#container-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gambar-1 {
+    border: 4px solid; color: #000;
+    background-color: darkkhaki;
+    width: 200px;
+    height: 150px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.gambar-2 {
+    border: 4px solid; color: #000;
+    background-color: darkkhaki;
+    width: 200px;
+    height: 150px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.gambar-3 {
+    border: 4px solid; color: #000;
+    background-color: darkkhaki;
+    width: 200px;
+    height: 150px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.gambar-4 {
+    border: 4px solid; color: #000;
+    background-color: darkkhaki;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.gambar-5 {
+    border: 4px solid; color: #000;
+    background-color: darkkhaki;
+    width: 200px;
+    height: 150px;
+    margin: 15px;
+    border-radius: 5px;
+}
