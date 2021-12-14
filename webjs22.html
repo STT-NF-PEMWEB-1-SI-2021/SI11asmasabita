@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praktikum javascript</title>
+    <script>
+        function hitung() {
+            const dollar = 14650;
+            let uang = document.getElementById("bil1").value;
+            console.log("Nilai Rupiah : " + uang);
+            let hasilkurs = uang / dollar;
+            let hasil = document.getElementById("hasil");
+            hasil.InnerHTML = "hasil : $" + hasilkurs;
+        }
+    </script>
+</head>
+<body>
+    <h2>Menghitung Krus Rupiah </h2>
+    Menghitung Nilai Uang Rupiah :
+    <input type="number" value="" size="10" id="bil1">
+    <br>
+    <button onlclik="hitung()">hitung</button>
+    <br>
+    <span id="hasil"></span>
+</body>
+</html>

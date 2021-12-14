@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praktikum javascript</title>
+    <script>
+        function hitung() {
+            const PHI = 3.14;
+            let jari = document.getElementById("bil1").value;
+            console.log("jari-jari : " + jari);
+            let luas = PHI  + jari * jari;
+            let kll = 2.0 * PHI * jari;
+            console.log("luas : " + luas);
+            console.log("kel : " +  kel);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innterHTML = "Luas : " + luas +  "\nKeliling : " + kel;
+        }
+    </script>
+</head>
+<body>
+    <h3>Menghitung Luas & Keliling Lingkaran </h3>
+    Masukan Jari-Jari Lingkaran :
+    <input type="number" value="" size="10" id="bil1"/>
+    <br>
+    <button onclick="hitung()">Hitung</button> 
+    <br> Hasil : <span id="hasil"></span>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praktikum javascript</title>
+    <script>
+        function hitung () {
+            let x = Number(document. getElementById("bil1").value);
+            let y = Number(document. getElementById("bil1").value);
+            let z = x + y;
+            document.getElementById("bil1").value;
+            console.log("angka 1 : " + x);
+            console.log("angka 1 : " + y);
+            console.log("hasil : " + z);
+        }
+    </script>
+</head>
+<body>
+    <from id="from1">
+    <h2>Menghitung Dua Jumlah Bilangan</h2>
+    <input type="text" id="bil1" value="0" onchange="hitung(x+y)"><br>
+    <b> + </b>
+    <br>
+    <input type="text" id="bil1" value="0" onchange="hitung(x+y)"><br>
+    <b>=</b>
+    <br>
+    <input type="text" id="bil1" value="0" onchange="hitung(hasil)">
+    </from>
+</body>
+</html>
