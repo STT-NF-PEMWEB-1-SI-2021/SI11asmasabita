@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login sukses</title>
+<style>
+body {
+    border: solid 1px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+</style>
+</head>
+<body class="body">
+    <h1>Login Sukses</h1>
+    <p>Username : <input type="text" name="username" id="username"> </p>
+    <p>Password : <input type="password" name="password" id="password"></p>
+    <div>
+    <button onclick="checkFrom()">Login</button>
+    </div>
+    <script>
+        function checkFrom(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+        }
+
+        if(username == "asma" || password == "12345"){
+           //alert("from tidak boleh kosong");
+        }
+        else{
+            alert("login sukses");
+            var x = window.open("login sukses.html", "_blank");
+            x.focus
+        }
+    </script>
+</body>
+</html>
