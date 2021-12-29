@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="body">
+    <div class="login">
+        <from action="#" method="POST" onsubmit="validasi()">
+        <div>
+            <label>Nama Pelanggan :</label>
+            <input type="text" name="nama" id="nama" maxlength="30"/>
+        </div>
+        <div>
+            <label>Email :</label>
+            <input type="email" name="email" id="email"/>
+        </div>
+        <div>
+            <label>Jam Keberangkatan :</label>
+            <select name="jam">
+                <option>02.00 AM</option>
+                <option>05.00 AM</option>
+                <option>09.00 AM</option>
+                <option>12.00 PM</option>
+                <option>17.00 PM</option>
+            </select>
+        </div>
+        <div>
+            <label>Tujuan Keberangkatan :</label>
+            <select name="tujuan">
+                <option>Jakarta</option>
+                <option>Bogor</option>
+                <option>Yogyakarta</option>
+                <option>Bandung</option>
+                <option>Surakarta</option>
+            </select>
+        </div>
+        <div>
+            <label>Jumlah Tiket :</label>
+            <select name="tiket">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div>
+            <button onclick="checkFrom()">Login</button>
+        </div>
+        </from>
+    </div>
+</body>
+</html>
