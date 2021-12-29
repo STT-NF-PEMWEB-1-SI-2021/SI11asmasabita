@@ -1,8 +1,4 @@
-body {
-    display: block;
-    border: solid 1px;
-    padding: 20px;
-    width: 300px;
-    border-radius: 4px;
+img{
+    width: 20%;
+    height: 20%;
 }
-
