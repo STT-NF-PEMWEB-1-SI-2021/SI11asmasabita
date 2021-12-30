@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body class="body">
-    <div class="login">
-        <from action="#" method="POST" onsubmit="validasi()">
-        <div>
-            <label>Nama Pelanggan :</label>
-            <input type="text" name="nama" id="nama" maxlength="30"/>
-        </div>
+    <div>
+        <form name="formPendaftaran" method="post" id="form" onsubmit="return validateForm()">
+            <div >
+                <label>Nama</label>
+                <input type="text" name="nama" id="nama"  required minlength="30">
+            </div>
         <div>
             <label>Email :</label>
             <input type="email" name="email" id="email"/>
         </div>
         <div>
             <label>Jam Keberangkatan :</label>
-            <select name="jam">
+            <select name="jam" >
+                <option></option>
                 <option>02.00 AM</option>
                 <option>05.00 AM</option>
                 <option>09.00 AM</option>
@@ -31,6 +32,7 @@
         <div>
             <label>Tujuan Keberangkatan :</label>
             <select name="tujuan">
+                <option></option>
                 <option>Jakarta</option>
                 <option>Bogor</option>
                 <option>Yogyakarta</option>
@@ -41,6 +43,7 @@
         <div>
             <label>Jumlah Tiket :</label>
             <select name="tiket">
+                <option></option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -49,9 +52,38 @@
             </select>
         </div>
         <div>
-            <button onclick="checkFrom()">Login</button>
+            <button type="submit" class="btn btn-primary">Sumbit</button>
         </div>
         </from>
     </div>
+    <script>
+       function validateForm() {
+           if (document.forms["formPendaftaran"]["nama"].value == "") {
+               alert("Nama Tidak Boleh Kosong");
+               document.forms["formPendaftaran"]["nama"].focus();
+               return false;
+            }
+            if (document.forms["formPendaftaran"]["email"].value == "") {
+                alert("Email Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["email"].focus();
+                return false;
+            }
+            if (document.forms["formPendaftaran"]["jam"].selectedIndex < 1) {
+                alert("Jam Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["jam"].focus();
+                return false;
+            }
+            if (document.forms["formPendaftaran"]["tujuan"].selectedIndex < 1) {
+                alert("Tujuan Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["tujuan"].focus();
+                return false;
+            }
+            if (document.forms["formPendaftaran"]["tiket"].selectedIndex < 1) {
+                alert("Tiket Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["tiket"].focus();
+                return false;
+            }
+        }
+    </script>
 </body>
 </html>
