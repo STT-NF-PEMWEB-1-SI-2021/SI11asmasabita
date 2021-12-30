@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0 auto;
+  max-width: 350px;
+  padding: 0 10px;
+  border-style: solid;
+}
+
+.container {
+  border: 2px solid 
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+</style>
+</head>
+<body>
+    <h2>Chat Messages</h2>
+    <div class="container">
+        <p>Hello</p>
+    </div>
+
+    <div class="container darker">
+        <p>Hai. Hello juga</p>
+    </div>
+
+    <div class="container">
+        <p>Bagaimana keseharian mu sekarang?</p>
+    </div>
+
+    <div class="container darker">
+        <p>Baik, yaa</p></div>
+<div id="kirim">
+    <input type="text" name="text" width="30px" >
+    <input type="submit" name="event" value="kirim" class="button" onclick="return deshabilitarBoton()" width="30px"/>
+</div>
+
+<script>
+    //Membuat fungsi kirim()
+    function kirim(){
+        var nama = document.getElementById("kirim").value;
+    }
+    document.getElementById("kirim").kirim=tampil
+    </script>
+</body>
+</html>
